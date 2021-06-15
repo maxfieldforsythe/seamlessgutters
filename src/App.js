@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import './bootstrap.min.css';
+import './App.css'
+import { BrowserRouter as Router, Route, Switch , withRouter} from "react-router-dom";
+import React, {Component, memo, useState , Fragment, Button} from 'react'
+import Home from './components/Home'
+import Estimate from './components/Estimate'
+import Gallery from './components/Gallery'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+
+
+class App extends Component {
+  render() {
+    return(
+      <React.Fragment>
+          <Router basename={process.env.PUBLIC_URL}>
+            <Switch>
+              <Route exact path="/" component={withRouter(Home)} />
+              <Route exact path="/estimate" component={withRouter(Estimate)} />
+              <Route exact path="/gallery" component={withRouter(Gallery)} />
+            </Switch>
+          </Router>
+      </React.Fragment>
+    )
+  }
 }
 
 export default App;

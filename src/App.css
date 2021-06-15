@@ -2,37 +2,104 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.scrollhost::-webkit-scrollbar {
+  display: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.scrollhost-container {
+  position: relative;
+  height: 85vh;
+}
+.scrollhost {
+  overflow: auto;
+  height: calc(100vh);
+}
+
+.scroll-bar {
+  width: 10px;
+  height: 85vh;
+  right: 1px;
+  top: 130px;
+  position: absolute;
+  border-radius: 7px;
+  bottom: 0px;
+  background-color: rgba(0, 0, 0, 0.35);
+}
+
+.scroll-thumb {
+  width: 8px;
+  height: 17vh;
+  margin-left: 1px;
+  position: absolute;
+  border-radius: 7px;
+  opacity: 1;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.55);
+}
+
+
+.myButton {
+  color: #000000;
+  height: 100%;
+  overflow: hidden;
+
+}
+
+.myButton:hover {
+  background-color:#a10000;
+  color: #fff;
+  border-radius: 0px;
+  cursor: pointer;
+}
+
+.bgImage {
+  width: 100%;
+}
+
+
+.phone {
+  height: 40px;
+  margin-right: 10px;
+  display: none;
+}
+
+@media only screen and (max-width: 740px) {
+  .menu {
+    display:none;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@media only screen and (min-width: 740px) {
+  .pp {
+    display:none;
+  }
 }
 
-.App-link {
-  color: #61dafb;
+.shadows {
+  -moz-box-shadow:    0px 0px 15px 1px rgb(0, 0, 0);
+  -webkit-box-shadow: 0px 0px 15px 1px rgb(0, 0, 0);
+  box-shadow:         0px 0px 15px 1px rgb(0, 0, 0);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.headerRow {
+  margin-right: 13vw;
+  position: absolute;
+  right: 0;
+}
+
+.services {
+  color: black;
+  font: bold calc(13px + .5vw) Verdana, sans-serif;
+}
+
+.heady {
+  color: #3b3b3b;
+  font: bold calc(36px + .5vw) Verdana, sans-serif;
+}
+
+.sub {
+  color: #737373;
+  margin-top: 10px;
+  font: calc(10px + .5vw) Verdana, sans-serif;
+  padding-bottom: 30px;
 }
