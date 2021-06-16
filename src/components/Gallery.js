@@ -61,7 +61,7 @@ class Gallery extends Component {
         return (
             <div>
                 <Header/>
-                <div className="heady" style={{paddingTop: '140px', textAlign: 'center'}}>
+                <div className="heady" style={{paddingTop: '140px', textAlign: 'center', font: 'bold calc(36px + .5vw) Verdana, sans-serif'}}>
                     Image Gallery
                 </div>
                 <div  style={{marginBottom: '20px', marginLeft: '5vw',width: '90vw', height: '6px', backgroundColor: '#a10000', marginTop: '10px', borderRadius: '20px'}}/>

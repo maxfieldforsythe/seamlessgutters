@@ -2,6 +2,23 @@
   text-align: center;
 }
 
+.services {
+  color: black;
+  font: bold calc(13px + .5vw) Verdana, sans-serif;
+}
+
+.heady {
+  color: #3b3b3b;
+  font: bold calc(36px + .5vw) Verdana, sans-serif;
+}
+
+.sub {
+  color: #737373;
+  margin-top: 10px;
+  font: calc(10px + .5vw) Verdana, sans-serif;
+  padding-bottom: 30px;
+}
+
 .scrollhost::-webkit-scrollbar {
   display: none;
 }
@@ -87,19 +104,3 @@
   right: 0;
 }
 
-.services {
-  color: black;
-  font: bold calc(13px + .5vw) Verdana, sans-serif;
-}
-
-.heady {
-  color: #3b3b3b;
-  font: bold calc(36px + .5vw) Verdana, sans-serif;
-}
-
-.sub {
-  color: #737373;
-  margin-top: 10px;
-  font: calc(10px + .5vw) Verdana, sans-serif;
-  padding-bottom: 30px;
-}

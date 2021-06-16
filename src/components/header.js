@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom'
+import '../App.css'
 import {Collapse} from 'reactstrap';
-
 import logo from "./aaaaa.PNG"
 import phone from './phone.png'
 import down from './down.png'
