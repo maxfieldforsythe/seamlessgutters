@@ -37,7 +37,7 @@ class Home extends Component {
                         <div className="col-md-3 ml-auto mr-auto">
                             <div className="container">
                                 <div className="row d-flex justify-content-center">
-                                    <img src={GutterIcon} style={{height: '10vw', paddingBottom: '20px'}}/>
+                                    <img src={GutterIcon} className="ratio" style={{height: '10vw', paddingBottom: '20px', aspectRatio: '107.2%'}}/>
                                 </div>
                                 <div style={{font: 'bold calc(13px + .5vw) Verdana, sans-serif'}}className="row services d-flex justify-content-start">
                                     5" / 6" Seamless Gutters
@@ -50,7 +50,7 @@ class Home extends Component {
                         <div className="col-md-3 ml-auto mr-auto">
                             <div className="container">
                             <div className="row d-flex justify-content-center">
-                                    <img src={shield} style={{height: '10vw', paddingBottom: '20px'}}/>
+                                    <img src={shield} className="ratio" style={{height: '10vw', paddingBottom: '20px', aspectRatio: '107.2%'}}/>
                                 </div>
                                 <div  style={{font: 'bold calc(13px + .5vw) Verdana, sans-serif'}} className="services row  d-flex justify-content-start">
                                     Gutter Guards
@@ -63,7 +63,7 @@ class Home extends Component {
                         <div className="col-md-3 ml-auto mr-auto">
                             <div className="container">
                             <div className="row d-flex justify-content-center">
-                                    <img src={hammer} style={{height: '10vw', paddingBottom: '20px'}}/>
+                                    <img src={hammer} className="ratio" style={{height: '10vw', paddingBottom: '20px', aspectRatio: '107.2%'}}/>
                                 </div>
                                 <div  style={{font: 'bold calc(13px + .5vw) Verdana, sans-serif'}} className="services row  d-flex justify-content-start">
                                     Repair & Maintenance

@@ -60,7 +60,7 @@ class header extends Component {
                         </div>
                     </div>
                 </div>
-                <div className="row menu" style={{height: '30px', width: '80vw', paddingLeft: '10vw'}}>
+                <div className="row menu" style={{height: '30px', width: '90vw', paddingLeft: '10vw'}}>
                     <div className="myButton col d-flex justify-content-center align-items-center" onClick={this.home} style={{font: 'calc(12px + .3vw) bold Verdana, sans-serif'}}>
                         HOME
                     </div>
@@ -81,7 +81,7 @@ class header extends Component {
                         </div>
                     </Link>
                 </div>
-                <img src={down} onClick={() => this.show()} className='pp btn' style={{position: 'fixed', right: '50px', top: '70px', height: '40px'}}/>
+                <img src={down} onClick={() => this.show()} className='pp btn' style={{position: 'fixed', right: '50px', top: '60px', height: '40px'}}/>
                 <Collapse className="pp" isOpen={this.state.open}>
                     <div className="col" style={{height: '30%', width: '50vw', paddingLeft: '1vw'}}>
                         <div className="myButton row d-flex justify-content-center align-items-center" onClick={this.home} style={{padding: '20px',font: 'calc(16px + .3vw) bold Verdana, sans-serif'}}>

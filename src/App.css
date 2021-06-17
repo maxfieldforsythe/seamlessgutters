@@ -81,6 +81,12 @@
 }
 
 @media only screen and (max-width: 740px) {
+  .scroll-bar {
+    display:none;
+  }
+}
+
+@media only screen and (max-width: 740px) {
   .menu {
     display:none;
   }
@@ -89,6 +95,16 @@
 @media only screen and (min-width: 740px) {
   .pp {
     display:none;
+  }
+}
+
+.icons {
+  padding-bottom: 20px;
+}
+
+@media only screen and (min-width: 740px) {
+  .icons {
+    padding-bottom: 10px;
   }
 }
 

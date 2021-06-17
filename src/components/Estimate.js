@@ -47,12 +47,12 @@ class Estimate extends Component {
         'Gmail', templateId,
         variables
         ).then(res => {
-          console.log('Email successfully sent!')
+          new Notification("Message sent!")
         })
         // Handle errors here however you like, or use a React error boundary
         .catch(err => console.error('Oh well, you failed. Here some thoughts on the error that occured:', err))
-        this.sleep(1000).then(() => {
-            window.location.reload();
+        this.sleep(100).then(() => {
+            window.location.replace("/#home")
           })
     }
 
@@ -62,7 +62,7 @@ class Estimate extends Component {
 
     render() {
         return (
-            <div>
+            <div id="estimate" href="#/estimate">
                 <Header/>
                 <div className="container-fluid d-flex" style={{width: '75vw'}}>
                     <div className="col" style={{marginTop: '160px', height: '60vh'}}>
