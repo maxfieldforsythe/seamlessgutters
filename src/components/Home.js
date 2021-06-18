@@ -26,8 +26,7 @@ class Home extends Component {
                 <div  style={{width: '80%', height: '6px', backgroundColor: '#a10000', marginTop: '20px', borderRadius: '20px', marginLeft: '10vw'}}/>
                 <img className="center" src={Gutter2} style={{width: '35vw',marginTop: '30px', marginLeft: '50vw', transform: 'translate(-50%)'}}/>
                 <div id="about" style={{height: '16vh', width: '70%', marginBottom: 'calc(400px - 12vw)',marginLeft: 'auto', marginRight: 'auto', paddingTop:'30px', font: 'calc(13px + .5vw) Verdana, sans-serif', lineHeight: '35px'}} className="about d-flex justify-content-center">
-                    New Paltz Seamless Gutters is a family owned and operated business located right here in the heart of the Hudson valley. We are commited to providing the highest quality seamless gutters for your home. Not just a gutter that looks nice, but one that will last for years to come. Through precision measurements and alignments we can assure you that these our gutters will hold strong. With flexible sizing options we will find the perfect fit for you! 
-                </div>
+                New Paltz Seamless Gutters is a family owned and operated business located right here in the heart of the Hudson valley. We are commited to providing the highest quality seamless gutters for your home. Not just a gutter that looks nice, but one that will last for years to come. Through precision measurements and alignments we can assure you that these our gutters will hold strong. With flexible sizing options we will find the perfect fit for you!                </div>
                 <div id="services" style={{width: '80vw', paddingTop: '200px', font: 'bold calc(36px + .5vw) Verdana, sans-serif'}} className="heady d-flex justify-content-center ml-auto mr-auto">
                     Our Services
                 </div>
@@ -43,8 +42,7 @@ class Home extends Component {
                                     5" / 6" Seamless Gutters
                                 </div>
                                 <div style={{font: 'calc(10px + .5vw) Verdana, sans-serif'}} class="sub row d-flex justify-content-center">
-                                    We offer both 5 and 6 inch gutters to ensure that you get the best fit and look. Our gutters are of the highest quality and are extremely durable in all weather conditions.
-                                </div>
+                                We offer both standard 5” and oversized 6” gutters to accommodate any building size and style. Our gutters are of the highest quality and are extremely durable in all weather conditions.                                 </div>
                             </div>
                         </div>
                         <div className="col-md-3 ml-auto mr-auto">
@@ -56,7 +54,7 @@ class Home extends Component {
                                     Gutter Guards
                                 </div>
                                 <div style={{font: 'calc(10px + .5vw) Verdana, sans-serif'}} class="sub row d-flex justify-content-center">
-                                    When it comes to keeping leaves and other unwanted objects out of your gutter, our gutter guards will provide long lasting protection.
+                                Keeping your gutters clean is critical to having a functioning system. We offer multiple gutter guards that are specific to your properties foliage. They will keep your gutters working properly and provide added strength for heavy winters. 
                                 </div>
                             </div>
                         </div>    
@@ -69,7 +67,7 @@ class Home extends Component {
                                     Repair & Maintenance
                                 </div>
                                 <div style={{font: 'calc(10px + .5vw) Verdana, sans-serif'}} class="sub row d-flex justify-content-center">
-                                    Not only do we do installations. We also offer repair and maintenance services to keep your gutters healthy for years to come.
+                                Gutters should be cleaned twice a year in the spring and fall to make sure you have a system that works year round. It is important to repair any issues with the system to avoid any water damage and costly expenses in the future.
                                 </div>
                             </div>
                         </div>
