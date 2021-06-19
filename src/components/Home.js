@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import OnHoverScrollContainer from "./CustomScrollDiv";
 import '../App.css'
-
+import {Link} from 'react-router-dom'
 import Header from './header'
 import Gutter from './adsfasdf.jpg'
 import Gutter2 from './Gutters-2.jpg'
@@ -16,7 +16,19 @@ class Home extends Component {
                 <Header/>
                 <OnHoverScrollContainer>
                 <div id="home" style={{height: '110px'}}></div>
-                <img  src={Gutter} className="bgImage shadows"/>
+                <div style={{position: 'relative'}}>
+                    <img  src={Gutter} className="bgImage shadows"/>
+                    <div style={{position: 'absolute', width: '40vw', marginLeft: '30vw', aspectRatio: '2', top: '50%', backgroundColor: 'rgba(50,50,50,0.95)', transform: 'translate(0%, -50%)'}}>
+                        <div style={{color: '#fff', textAlign: 'center', paddingTop: 'calc(0px + 1vw)', fontSize: 'calc(5px + 2.5vw)'}}>
+                            Looking for an estimate? <br/> Request one today!
+                        </div>
+                        <Link to='/estimate' style={{ textDecoration: 'none' }}>
+                        <div className="btn d-flex justify-content-center align-items-center" style={{marginLeft: '10vw', marginTop: '1vw', width: '20vw', aspectRatio: '3', backgroundColor: '#a10000', fontSize: 'calc(1px + 2.5vw)', color: '#fff' }}>
+                            Get an estimate
+                        </div>
+                        </Link>
+                    </div>
+                </div>
                 <div id="about" className="d-flex justify-content-center align-items-center" style={{disaply: 'flex', height: '8vh', backgroundColor: '#e8e8e8', color: '#9c9c9c', font: 'calc(15px + .5vw) Verdana, sans-serif'}}>
                     Committed to superior quality and results!
                 </div>
@@ -25,18 +37,20 @@ class Home extends Component {
                 </div>
                 <div  style={{width: '80%', height: '6px', backgroundColor: '#a10000', marginTop: '20px', borderRadius: '20px', marginLeft: '10vw'}}/>
                 <img className="center" src={Gutter2} style={{width: '35vw',marginTop: '30px', marginLeft: '50vw', transform: 'translate(-50%)'}}/>
-                <div id="about" style={{height: '16vh', width: '70%', marginBottom: 'calc(400px - 12vw)',marginLeft: 'auto', marginRight: 'auto', paddingTop:'30px', font: 'calc(13px + .5vw) Verdana, sans-serif', lineHeight: '35px'}} className="about d-flex justify-content-center">
-                New Paltz Seamless Gutters is a family owned and operated business located right here in the heart of the Hudson valley. We are commited to providing the highest quality seamless gutters for your home. Not just a gutter that looks nice, but one that will last for years to come. Through precision measurements and alignments we can assure you that these our gutters will hold strong. With flexible sizing options we will find the perfect fit for you!                </div>
-                <div id="services" style={{width: '80vw', paddingTop: '200px', font: 'bold calc(36px + .5vw) Verdana, sans-serif'}} className="heady d-flex justify-content-center ml-auto mr-auto">
+                <div id="about" style={{height: '16vh',  marginBottom: 'calc(400px - 12vw)',width: '70%',marginLeft: 'auto', marginRight: 'auto', paddingTop:'30px', font: 'calc(13px + .5vw) Verdana, sans-serif', lineHeight: '35px'}} className="about d-flex justify-content-center">
+                    New Paltz Seamless Gutters is a locally owned and operated business located in the heart of the Hudson valley. We are committed to providing the highest quality gutter solutions for your home or business. Our systems are made with durable materials that will withstand harsh weather conditons and will exceed your expectations for years to come. We offer multiple size and color options to provide a custom fit and look for your home. We look forward to working with you. Request an estimate today!                 
+                </div>
+
+                <div id="services" style={{width: '80vw', paddingTop: '120px', font: 'bold calc(36px + .5vw) Verdana, sans-serif'}} className="heady d-flex justify-content-center ml-auto mr-auto">
                     Our Services
                 </div>
                 <div  style={{width: '80%', height: '6px', backgroundColor: '#a10000', marginTop: '20px', borderRadius: '20px', marginLeft: '10vw'}}/>
-                <div style={{height: '50vh' , paddingTop: '40px'}} className="d-flex justify-content-center">
+                <div style={{minHeight: '50vh' , paddingTop: '40px'}} className="d-flex justify-content-center">
                     <div className="row" style={{width: '80vw'}}>
                         <div className="col-md-3 ml-auto mr-auto">
                             <div className="container">
                                 <div className="row d-flex justify-content-center">
-                                    <img src={GutterIcon} className="ratio" style={{height: '10vw', paddingBottom: '20px', aspectRatio: '107.2%'}}/>
+                                    <img src={GutterIcon} className="ratio" style={{height: '10vw', paddingBottom: 'calc(5px + 1vw)', aspectRatio: '107.2%'}}/>
                                 </div>
                                 <div style={{font: 'bold calc(13px + .5vw) Verdana, sans-serif'}}className="row services d-flex justify-content-start">
                                     5" / 6" Seamless Gutters
@@ -48,7 +62,7 @@ class Home extends Component {
                         <div className="col-md-3 ml-auto mr-auto">
                             <div className="container">
                             <div className="row d-flex justify-content-center">
-                                    <img src={shield} className="ratio" style={{height: '10vw', paddingBottom: '20px', aspectRatio: '107.2%'}}/>
+                                    <img src={shield} className="ratio" style={{height: '10vw', paddingBottom: 'calc(5px + 1vw)', aspectRatio: '107.2%'}}/>
                                 </div>
                                 <div  style={{font: 'bold calc(13px + .5vw) Verdana, sans-serif'}} className="services row  d-flex justify-content-start">
                                     Gutter Guards
@@ -61,7 +75,7 @@ class Home extends Component {
                         <div className="col-md-3 ml-auto mr-auto">
                             <div className="container">
                             <div className="row d-flex justify-content-center">
-                                    <img src={hammer} className="ratio" style={{height: '10vw', paddingBottom: '20px', aspectRatio: '107.2%'}}/>
+                                    <img src={hammer} className="ratio" style={{height: '10vw', paddingBottom: 'calc(5px + 1vw)', aspectRatio: '107.2%'}}/>
                                 </div>
                                 <div  style={{font: 'bold calc(13px + .5vw) Verdana, sans-serif'}} className="services row  d-flex justify-content-start">
                                     Repair & Maintenance
