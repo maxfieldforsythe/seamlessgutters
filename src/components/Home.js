@@ -19,11 +19,11 @@ class Home extends Component {
                 <div style={{position: 'relative'}}>
                     <img  src={Gutter} className="bgImage shadows"/>
                     <div style={{position: 'absolute', width: '40vw', marginLeft: '30vw', aspectRatio: '2', top: '50%', backgroundColor: 'rgba(50,50,50,0.95)', transform: 'translate(0%, -50%)'}}>
-                        <div style={{color: '#fff', textAlign: 'center', paddingTop: 'calc(0px + 1vw)', fontSize: 'calc(5px + 2.5vw)'}}>
+                        <div style={{color: '#fff', textAlign: 'center', paddingTop: 'calc(0.8vw)', fontSize: 'calc(5px + 2.5vw)'}}>
                             Looking for an estimate? <br/> Request one today!
                         </div>
                         <Link to='/estimate' style={{ textDecoration: 'none' }}>
-                        <div className="btn d-flex justify-content-center align-items-center" style={{marginLeft: '10vw', marginTop: '1vw', width: '20vw', aspectRatio: '3', backgroundColor: '#a10000', fontSize: 'calc(1px + 2.5vw)', color: '#fff' }}>
+                        <div className="btn d-flex justify-content-center align-items-center" style={{marginLeft: '10vw', marginTop: '1vw', marginBottom: '1vw', width: '20vw', aspectRatio: '3', backgroundColor: '#a10000', fontSize: 'calc(1px + 2.5vw)', color: '#fff' }}>
                             Get an estimate
                         </div>
                         </Link>
@@ -33,7 +33,7 @@ class Home extends Component {
                     Committed to superior quality and results!
                 </div>
                 <div style={{paddingTop: '100px', font: 'bold calc(36px + .5vw) Verdana, sans-serif'}} className="heady about d-flex justify-content-center">
-                    About Our Business
+                    About Us
                 </div>
                 <div  style={{width: '80%', height: '6px', backgroundColor: '#a10000', marginTop: '20px', borderRadius: '20px', marginLeft: '10vw'}}/>
                 <img className="center" src={Gutter2} style={{width: '35vw',marginTop: '30px', marginLeft: '50vw', transform: 'translate(-50%)'}}/>
